@@ -1,0 +1,32 @@
+import React from "react";
+import products from "../data/MockData.jsx"; // mock data import
+import "./MensFashion.css"; // istəsən eyni css faylı istifadə et
+
+function Medicine() {
+  // "Men's Fashion" kateqoriyasını tapırıq
+  const medicineCategory = products.find(
+    (category) => category.name === "Medicine"
+  );
+
+  return (
+    <div className="mens-page">
+      <h1>{medicineCategory.name}</h1>
+      <div className="product-grid">
+        {medicineCategory.products.map((item) => (
+          <div key={item.id} className="product-card">
+            <img src={item.images[0]} alt={item.name} className="product-img" />
+            <p className="product-name">{item.name || "Product"}</p>
+            <p className="product-price">${item.price}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default Medicine;
+
+
+
+
+

@@ -1,0 +1,38 @@
+.womens-page {
+  width: 80%;
+  margin: 40px auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 0 5px #eaeaea;
+}
+
+.product-img {
+  width: 100;
+  height: 220px;
+  object-fit: contain;
+}
+
+.product-name {
+  font-weight: 500;
+  margin: 10px 0 5px;
+}
+
+.product-price {
+  color: #db4444;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+

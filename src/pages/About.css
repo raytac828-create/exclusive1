@@ -1,0 +1,116 @@
+.about2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* dikeydə ortalasın */
+    justify-content: center; /* aralarında boşluq yaratsın */
+    padding-top: 80px;
+    padding-left: 80px;
+    padding-bottom: 80px;
+    gap: 70px;
+}
+
+.about3 {
+    width: 450px; /* yazı genişliyini məhdudlaşdır */
+}
+
+.about3 h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about3 p {
+    font-size: 16px;
+    line-height: 1.6; /* yazının oxunuşunu yaxşılaşdırır */
+    margin-bottom: 15px;
+    color: #333; /* bir az yumşaq rəng */
+}
+
+.about4 {
+    width: 600px; /* şəkilin ölçüsünü bir az balacalaşdır */
+    height: 500px;
+}
+
+.about4 img {
+    width: 100%;
+    height: 100%;
+}
+.about5{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.about6{
+    border: 1px solid #ccc;
+    padding: 30px;
+    width: 230px;
+    height: 230px;
+    text-align: center;
+    
+}
+.about6 .badge{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 30px;
+    color: white;
+    background-color: black;
+    
+}
+.about6:hover{
+    background-color: rgba(219, 68, 68, 1);
+    .badge{
+        color: black;
+        background-color: white;
+        border-color: white;
+    }
+    h4{
+        color: white;
+        
+    }
+    p{
+        color: white;
+    }
+}
+.about6 h4{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 26px;
+}
+.about6 p{
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.about7{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.about8{
+    width: 300px;
+    height: 564px;
+    
+}
+.about8 img{
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    object-position: top;
+    background-color: rgba(245, 245, 245, 1);
+    padding: 30px;
+}
+.about9{
+    display: flex;
+    gap: 10px;
+}
+.abouticon{
+    color: black;
+}
