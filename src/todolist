@@ -1,0 +1,9 @@
+// router mentiqini bu branch da oldugu kimi yaz
+// bundan elave shared altinda global istifade olunan componentleri yaz 
+// misal ucun button, input, card, modal ve
+// textfield kimi componentler senin ucun yazmisam
+// bunlarin her biri oz folderinde olmalidir
+// her bir componentin oz css fayli olmalidir
+// react toolkit istifade et global state ucun
+// lazy import istifade etmeyi araşdır
+//  assets altinda images folderi yarat ve sekilleri orda saxla
