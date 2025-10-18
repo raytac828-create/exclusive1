@@ -1,13 +1,17 @@
 import Categories from "../components/Categories.jsx"
-import Category from "../components/Category.jsx";
+
+import Delivery from "../components/Delivery.jsx";
 import Todays from "../components/Todays.jsx";
+
 
 function Home() {
     return(
         <div>
             <Categories/>
             <Todays/>
-            <Category/>
+            
+        
+            <Delivery/>
         </div>
     );
 }

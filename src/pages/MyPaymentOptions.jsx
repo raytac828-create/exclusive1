@@ -1,6 +1,6 @@
 function MyPaymentOptions() {
     return(
-        <div><p>my name</p></div>
+        <div><p>it is empty</p></div>
     );
 }
 export default MyPaymentOptions;

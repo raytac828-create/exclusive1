@@ -9,7 +9,6 @@ import HomeLifeStyle from "../pages/HomeLifeStyle.jsx";
 import Medicine from "../pages/Medicine.jsx";
 import BabysToys from "../pages/BabysToys.jsx";
 import GroceriesPets from "../pages/GroceriesPets.jsx";
-import HealthBeauty from "../pages/HealthBeauty.jsx";
 import Account from "../pages/Account.jsx";
 import LogIn from "../pages/LogIn.jsx";
 import Cart from "../pages/Cart.jsx";
@@ -21,6 +20,11 @@ import FAQ from "../pages/FAQ.jsx";
 import MyProfile from "../pages/MyProfile.jsx";
 import AddressBook from "../pages/AddressBook.jsx";
 import MyPaymentOptions from "../pages/MyPaymentOptions.jsx";
+import MyReturns from "../pages/MyReturns.jsx";
+import MyCancellations from "../pages/MyCancellations.jsx";
+import ProductDetail from "../pages/ProductDetail.jsx";
+
+
 
 const routers = [
   { path: "/", element: <Home /> },
@@ -34,7 +38,6 @@ const routers = [
   { path: "/medicine", element: <Medicine /> },
   { path: "/babystoys", element: <BabysToys /> },
   { path: "/groceriespets", element: <GroceriesPets /> },
-  { path: "/healthbeauty", element: <HealthBeauty /> },
   { path: "/account", element: <Account /> },
   { path: "/login", element: <LogIn /> },
   { path: "/cart", element: <Cart /> },
@@ -45,7 +48,10 @@ const routers = [
   { path: "/faq", element: <FAQ /> },
   { path: "/myprofile", element: <MyProfile /> },
   { path: "/addressbook", element: <AddressBook /> },
-  { path: "/mypaymentoptions", element: <MyPaymentOptions /> }
+  { path: "/mypaymentoptions", element: <MyPaymentOptions /> },
+  { path: "/myreturns", element: <MyReturns/>},
+  { path: "/mycancellations", element: <MyCancellations/>},
+  { path: "/product/:id", element: <ProductDetail /> },
 ];
 
 export default routers;

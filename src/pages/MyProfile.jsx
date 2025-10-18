@@ -1,6 +1,10 @@
+import AccountForm from "../components/AccountForm";
+
 function MyProfile() {
-    return(
-        <div><p>my name</p></div>
-    );
+  return (
+    <div>
+      <AccountForm />
+    </div>
+  );
 }
 export default MyProfile;

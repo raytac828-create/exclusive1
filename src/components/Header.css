@@ -1,44 +1,83 @@
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgb(160, 160, 160);
-  gap: 200px;
-  margin-top: 15px;
+  padding: 15px 40px;
+  gap: 30px;
+  margin-top: 5px;
+  flex-wrap: wrap; /* kiçik ekranlarda sıxışmasın */
 }
 
-.header-container1 {
-  padding: 20px;
-
+/* Logo hissəsi */
+.header1 {
+  display: flex;
   align-items: center;
 }
 
-.header-container2 ul {
+/* Naviqasiya menyusu */
+.header2 ul {
   list-style-type: none;
   display: flex;
   gap: 45px;
+  align-items: center;
 }
 
-a {
+.header2 a {
   text-decoration: none;
   color: black;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-.header-container3 {
+.header2 a:hover {
+  color: rgba(219, 68, 68, 1);
+}
+
+/* Sağ tərəfdə input və ikonlar */
+.header3 {
   display: flex;
+  align-items: center;
   gap: 25px;
 }
 
+.header3 input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.header3 input:focus {
+  outline: none;
+  border-color: rgba(219, 68, 68, 1);
+}
+
+.cart-icon {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.cart-icon:hover {
+  color: rgba(219, 68, 68, 1);
+}
+
+/* User icon */
 .user {
   padding: 3px;
+  transition: all 0.3s ease;
 }
 
 .user:hover {
   color: white;
   background-color: rgba(219, 68, 68, 1);
-  border: rgba(219, 68, 68, 1);
   border-radius: 50%;
 }
+.user:active {
+  background-color: rgba(219, 68, 68, 1);
+  color: white;
+}
+
+/* Dropdown menyu */
 .dropdown-menu {
   position: absolute;
   top: 70px;
@@ -52,18 +91,84 @@ a {
   z-index: 100;
 }
 
+.dropdown-menu a,
 .dropdown-menu p {
+  display: block;
   margin: 0;
   padding: 8px;
   cursor: pointer;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
 }
 
-.dropdown-menu p:hover {
+.dropdown-menu p:hover,
+.dropdown-menu a:hover {
   background-color: #f2f2f2;
 }
 
+/* 📱 Tablet ölçüsü üçün */
+@media (max-width: 1024px) {
+  .header {
+    gap: 20px;
+    padding: 10px 20px;
+  }
+
+  .header2 ul {
+    gap: 25px;
+  }
+
+  .header3 input {
+    width: 150px;
+  }
+}
+
+/* 📱 Telefon görünüşü üçün */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 10px 20px;
+  }
+
+  .header2 ul {
+    display: none; /* mobil görünüşdə menyunu gizlədir */
+  }
+
+  .header3 {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .header3 input {
+    flex: 1;
+    width: auto;
+  }
+
+  .dropdown-menu {
+    right: 20px;
+    top: 60px;
+  }
+}
+
+/* 🔹 Ən kiçik ekranlar üçün (480px) */
 @media (max-width: 480px) {
-  .header-container2 ul {
-    display: none;
+  .header3 {
+    gap: 15px;
+  }
+
+  .header3 input {
+    display: none; /* çox kiçik ekranda input-u gizlədir */
+  }
+
+  .cart-icon svg,
+  .user {
+    width: 26px;
+    height: 26px;
+  }
+
+  .header1 h3 {
+    font-size: 18px;
   }
 }

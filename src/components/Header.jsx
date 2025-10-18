@@ -10,10 +10,10 @@ function Header() {
 
   return (
     <div className="header">
-      <div className="header-container1">
+      <div className="header1">
         <h3>Exclusive</h3>
       </div>
-      <div className="header-container2">
+      <div className="header2">
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -30,15 +30,15 @@ function Header() {
         </ul>
       </div>
 
-      <div className="header-container3">
+      <div className="header3">
         <input type="text" placeholder="What are you looking for?" />
+        <Link to="/wishlist" className="cart-icon">
+          <Heart size={30} strokeWidth={1} />
+        </Link>
 
-        <Heart size={30} strokeWidth={1} />
-        <ShoppingCart
-          size={30}
-          strokeWidth={1}
-          
-        />
+        <Link to="/cart" className="cart-icon">
+          <ShoppingCart size={30} strokeWidth={1} />
+        </Link>
 
         <User
           className="user"
@@ -49,7 +49,7 @@ function Header() {
         />
         {open && (
           <div className="dropdown-menu">
-            <p>Manage My Account</p>
+            <Link to="/account">Manage My Account</Link>
             <p>My Order</p>
             <p>Logout</p>
           </div>

@@ -1,0 +1,66 @@
+.ourstory-container {
+    display: flex;
+    align-items: center;
+    padding: 80px 0px 80px 130px; 
+    gap: 120px; 
+}
+
+.ourstory-text,
+.ourstory-image {
+    flex: 1; 
+}
+
+
+.ourstory-image img {
+    width: 100%;
+    height: auto;
+    display: block; 
+    border-radius: 4px;
+}
+
+
+.ourstory-text h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 54px; 
+    font-weight: 600;
+    margin-bottom: 40px;
+    letter-spacing: 2px; 
+}
+
+
+.ourstory-text p {
+    font-size: 16px;
+    line-height: 1.6; 
+    margin-bottom: 24px;
+    color: #000;
+}
+
+/* 1. Planşet ekranları üçün (məsələn, 1024px-dən kiçik) */
+@media (max-width: 1024px) {
+    .ourstory-container {
+        padding: 60px 60px; /* Kənar boşluqları azaldırıq */
+        gap: 60px;          /* Aradakı boşluğu azaldırıq */
+    }
+    .ourstory-text h3 {
+        font-size: 40px; /* Başlığı bir az kiçildirirk */
+    }
+}
+
+/* 2. Mobil ekranlar üçün (məsələn, 768px-dən kiçik) - DAŞMA PROBLEMİNİ BURADA HƏLL EDİRİK */
+@media (max-width: 768px) {
+    .ourstory-container {
+        /* Elementləri yan-yana yox, alt-alta düzürük */
+        flex-direction: column; 
+        
+        /* Mobil üçün uyğun kənar boşluqları */
+        padding: 40px 20px;
+        
+        /* Alt-alta düzüldüyü üçün aradakı şaquli boşluq */
+        gap: 40px;
+    }
+
+    .ourstory-text h3 {
+        font-size: 32px; /* Başlığı mobil üçün daha da kiçildirirk */
+        margin-bottom: 20px;
+    }
+}
